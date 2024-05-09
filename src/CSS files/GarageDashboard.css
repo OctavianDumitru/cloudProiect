@@ -1,0 +1,121 @@
+/* Styling for the GarageDashboard component */
+
+/* General styles */
+.garage-dashboard {
+  font-family: "Arial", sans-serif;
+  padding: 20px; /* Add padding around the content */
+  background-color: #f9f9f9; /* Light gray background for better readability */
+}
+
+/* Heading styles */
+.garage-dashboard h1 {
+  font-size: 2em; /* Increase font size for the main heading */
+  color: #333; /* Dark gray color for text */
+}
+
+.garage-dashboard h2 {
+  font-size: 1.5em; /* Slightly smaller font size for sub-headings */
+  color: #555; /* Lighter gray for contrast */
+  margin-top: 20px; /* Add some spacing above the sub-heading */
+}
+
+/* List styles */
+.garage-dashboard ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.garage-dashboard li {
+  padding: 10px; /* Add some padding for spacing */
+  border-bottom: 1px solid #ddd; /* Light border to separate items */
+}
+
+.garage-dashboard li:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+
+/* Loading and error message styles */
+.loading,
+.error {
+  font-size: 1.2em; /* Increase font size for emphasis */
+  color: #ff0000; /* Red color for errors */
+  text-align: center; /* Center-align text */
+}
+
+.loading {
+  color: #888; /* Gray color for loading message */
+}
+
+.error {
+  color: #ff0000; /* Red color for error message */
+}
+
+/* Empty list message */
+.no-cars {
+  font-style: italic; /* Italicize text */
+  color: #888; /* Gray color for emphasis */
+}
+/* GarageDashboard.css */
+
+/* Styling for the entire GarageDashboard component */
+.garage-dashboard {
+  font-family: "Arial", sans-serif; /* General font */
+  background-color: #f9f9f9; /* Background for the whole component */
+  min-height: 100vh; /* Ensure it spans the entire viewport height */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333; /* Dark background color */
+  color: white; /* White text */
+  padding: 15px 20px; /* Padding around the navbar */
+  display: flex; /* Flex layout for centering elements */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center the title horizontally */
+}
+
+/* Title in the navbar */
+.navbar-title {
+  font-size: 1.5em; /* Font size for the title */
+  font-weight: bold; /* Bold text */
+}
+
+/* Content styling within GarageDashboard */
+.content {
+  padding: 20px; /* Padding around the content */
+  max-width: 800px; /* Limit content width for readability */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Heading styles */
+.content h1 {
+  font-size: 2em;
+  color: #333; /* Dark gray text color */
+}
+
+.content h2 {
+  font-size: 1.5em;
+  color: #555; /* Lighter gray text color */
+  margin-top: 20px;
+}
+
+/* List styling */
+.content ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* No padding */
+}
+
+.content li {
+  padding: 10px; /* Padding around list items */
+  border-bottom: 1px solid #ddd; /* Light border between list items */
+}
+
+.content li:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+/* No cars message */
+.content p {
+  font-style: italic;
+  color: #888; /* Light gray for emphasis */
+}
