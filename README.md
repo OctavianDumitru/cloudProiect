@@ -1,5 +1,7 @@
 My Garage, Vasiliu Octavian-Dumitru, Grupa 1032
-Link prezentare: 
+
+
+Link prezentare: https://www.youtube.com/watch?v=NSJuDtWqjyE 
 Link website: https://cloud-proiect.vercel.app/dashboard
 
 1. Introducere
