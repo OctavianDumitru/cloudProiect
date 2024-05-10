@@ -69,12 +69,12 @@ const LogIn = () => {
             {error && <div className="error-message">{error}</div>} {/* Display error message */}
             <form onSubmit={handleSubmit} className="login-form">
                 <div className="form-group">
-                    <label>Email:</label>
+                    <label>Username:</label>
                     <input
                         type="text"
                         value={username}
                         onChange={handleUsernameChange}
-                        placeholder="Enter your email"
+                        placeholder="Enter your username"
                     />
                 </div>
                 <div className="form-group">
