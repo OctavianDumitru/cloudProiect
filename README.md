@@ -5,18 +5,18 @@ Link prezentare: https://www.youtube.com/watch?v=NSJuDtWqjyE
 Link website: https://cloud-proiect.vercel.app/dashboard
 Link code sursa API in .NET: https://github.com/OctavianDumitru/cloudProiectAPI
 
-1. Introducere
+1. Introducere:
 Acest document descrie un aplicatie care permite gestionarea utilizatorilor, mașinilor și garajelor într-o aplicație web. Scopul API-ului este de a facilita adăugarea, modificarea și ștergerea utilizatorilor, mașinilor asociate cu utilizatorii și alte operațiuni conexe. API-ul este implementat folosind ASP.NET Core și utilizează o bază de date pentru a stoca informații despre utilizatori și mașini.
 Pentru a incepe, aplicatie se foloseste de o baza de date si un API creat in .NET 8, ambele fiind hostate pe Azure cloud. Site-ul este o aplicatie de tip React ce este hostat pe Vercel Cloud.
 
-3. Descriere problemă
+3. Descriere problemă:
 Aplicația web permite utilizatorilor să își gestioneze garajele virtuale, adăugând și eliminând mașini. API-ul trebuie să ofere:
 O metodă de autentificare a utilizatorilor și de obținere a informațiilor despre aceștia.
 Operațiuni CRUD (Create, Read, Update, Delete) pentru mașinile asociate cu un utilizator.
 Posibilitatea de a lista mașinile din garajul unui utilizator și de a le modifica sau șterge.
 Gestionarea relației dintre utilizatori, mărci auto și modele auto.
 
-4. Descriere API
+4. Descriere API:
 Endpoint-uri cheie:
 GET /api/WeatherForecast/GetBrands: Returnează toate mărcile de mașini.
 GET /api/WeatherForecast/GetModels?BrandID=1: Returnează toate modelele asociate unei mărci auto.
@@ -51,7 +51,7 @@ Request: Parametrii RecordID, BrandID, și ModelID sunt necesari pentru a actual
 Response: HTTP 200 OK dacă operația reușește, HTTP 404 Not Found dacă mașina nu este găsită.
 
 
-4. Flux de date
+4. Flux de date:
 Adăugare utilizator: Utilizatorii noi pot fi adăugați folosind endpoint-ul AddUser, care primește un username și un password.
 Autentificare utilizator: Pentru a verifica dacă un utilizator există, se poate folosi endpoint-ul CheckUser cu parametrul username.
 Listare mașini: Pentru a obține lista mașinilor unui utilizator, se folosește endpoint-ul GetCarsByUserID cu parametrul userId.
@@ -59,7 +59,7 @@ Adăugare mașină: Mașinile pot fi adăugate unui utilizator folosind endpoint
 Ștergere mașină: Pentru a șterge o mașină, se folosește endpoint-ul DeleteCar cu parametrul RecordID.
 Actualizare mașină: Mașinile existente pot fi actualizate cu endpoint-ul UpdateCar și parametrii RecordID, BrandID, și ModelID.
 
-5. Capturi de Ecran din Aplicatie
+5. Capturi de Ecran din Aplicatie:
 Interfata Log In:
 ![image](https://github.com/OctavianDumitru/cloudProiect/assets/48137850/35c340f9-3e24-4885-940e-f06c09ead6e9)
 Interfata principala:
